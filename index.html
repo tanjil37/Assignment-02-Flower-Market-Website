@@ -1,18 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awsome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Tailwind css link -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "primary-color": "#E95A08",
+
+               "color-light-gray": "rgba(0, 0, 0, 0.5)",
+            },
+            fontFamily: {
+              "noto-serif": ["Noto Serif", "serif"],
+              inter: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Noto+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+
+
+
+    </style>
+
     <title>Flower Market</title>
-</head>
-<body>
+  </head>
+
+  <body class="max-w-[91.6667%] mx-auto bg-[#D9D9D9]">
+
+
     <header>
-        <nav>
-            <div class="logo"></div>
-            
-        </nav>
+      <nav class="flex justify-between mt-8">
+        <div class="flex"><img src="./assets/logo.png" alt="" /></div>
+
+        <div class="flex items-center">
+          <ul class="flex gap-12">
+            <li>Home</li>
+            <li>Shop</li>
+            <li>About Us</li>
+            <li>Cart ($56)</li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="flex items-center  mt-28 ">
+
+        <div class="w-1/2">
+          <h3 class="font-noto-serif text-6xl font-bold mb-3">
+            <span class="text-black">ALWAYS</span>
+            <span class="text-primary-color"
+              >FRESH <br />
+              FLOWERS</span
+            >
+          </h3>
+          <p class="font-inter font-normal text-xl text-color-light-gray ">
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop. From classic roses to exotic blooms, we offer a wide
+            variety of fresh flowers that are perfect for any occasion.
+          </p>
+        </div>
+
+        <img src="./assets/hero-flower.png" alt="">
+      </div>
     </header>
-    <main></main>
+
+    <main class="">
+      <!-- our plant section -->
+      <section class="text-center mt-28">
+         <h2 class="font-noto-serif font-bold text-5xl mb-4"><span class="text-color-primary">Our</span> <span class="text-black">Plant</span></h2>
+       <p class="font-inter font-normal text-xl text-color-light-gray">Indulge your senses with the beauty and fragrance of our fresh flower shop. From <br> classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+
+       <!-- plant section card cotainer -->
+        <div>
+          <!-- card -->
+           <div>
+            <img src="./assets/sample-flower-image.png" alt="">
+            <h3 class="font-inter font-medium text-xl text-[#111111] mt-5">Lily Blossom</h3>
+            <p class="font-inter font-bold text-xl text-[#111111] ">20 USD</p>
+            <button class="bg-primary-color font-inter font-semibold text-4">ADD TO CART</button>
+
+
+           </div>
+        </div>
+
+
+
+      </section>
+
+
+
+
+
+    </main>
     <footer></footer>
-</body>
+  </body>
 </html>

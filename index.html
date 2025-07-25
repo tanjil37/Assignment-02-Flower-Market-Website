@@ -51,7 +51,7 @@
   </head>
 
   <body class="max-w-[91.6667%] mx-auto bg-[#D9D9D9]">
-    <header>
+    <header class="max-w-[91.6667%] mx-auto" >
       <nav class="flex justify-between mt-8">
         <div class="flex"><img src="./assets/logo.png" alt="" /></div>
 
@@ -87,7 +87,7 @@
 
     <main class="">
       <!-- our plant section -->
-      <section class="text-center mt-28">
+      <section class="max-w-[91.6667%] mx-auto text-center mt-28">
         <h2 class="font-noto-serif font-bold text-5xl mb-4">
           <span class="text-primary-color">Our</span>
           <span class="text-black">Plant</span>
@@ -224,7 +224,7 @@
         </div>
       </section>
       <!-- flowe and plant lover section -->
-      <section class="flex mt-52">
+      <section class="max-w-[91.6667%] mx-auto flex mt-52">
         <img src="/assets/flower-store.png" alt="" />
 
         <!-- flowe and plant lover text -->
@@ -257,7 +257,7 @@
       </section>
 
       <!-- Latest Deal Section -->
-      <section class="text-center mt-28">
+      <section class="max-w-[91.6667%] mx-auto text-center mt-28">
         <h2 class="font-noto-serif font-bold text-5xl mb-4">
           <span class="text-primary-color">Latest</span>
           <span class="text-black">Deal</span>
@@ -270,8 +270,6 @@
 
         <!-- Latest deal img -->
         <div class="mt-28 grid grid-cols-1 md:grid-cols-3 gap-4">
-
-
           <!-- left vartical card -->
           <div class="md:col-span-1 grid grid-rows-2 gap-5">
             <!-- card 1 -->
@@ -307,34 +305,81 @@
                 >
               </div>
             </div>
-
           </div>
-           <!-- Right big card -->
+          <!-- Right big card -->
+          <div
+            class="md:col-span-2 relative rounded-2xl overflow-hidden md:row-span-2"
+          >
+            <img src="./assets/deal-zabo.png" alt="" class="w-full h-full" />
             <div
-              class="md:col-span-2 relative rounded-2xl overflow-hidden md:row-span-2 "
+              class="absolute inset-0 flex text-white justify-center flex-col items-center bg-black bg-opacity-40"
             >
-              <img src="./assets/deal-zabo.png" alt="" class="w-full h-full" />
-              <div
-                class="absolute inset-0 flex text-white justify-center flex-col items-center bg-black bg-opacity-40"
+              <h2 class="font-noto-sefir text-xl font-bold">
+                60% Off | Bloom Plant
+              </h2>
+              <a
+                href="#"
+                class="underline font-semibold mt-4 text-base font-inter"
+                >Shop Now</a
               >
-                <h2 class="font-noto-sefir text-xl font-bold">
-                  60% Off | Bloom Plant
-                </h2>
-                <a
-                  href="#"
-                  class="underline font-semibold mt-4 text-base font-inter"
-                  >Shop Now</a
-                >
-              </div>
             </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
+    <footer class="max-w-[91.6667%] mx-auto my-12">
 
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <!-- Left: Logo and Description -->
+        <div>
+          <img src="./assets/logo.png" alt="">
+          <p class="font-inter font-normal text-xl text-gray-700">
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop.
+          </p>
         </div>
 
+        <!-- Middle: Navigation Links -->
+        <div class="grid grid-cols-2 gap-4 text-sm text-gray-700">
+          <ul class="space-y-8">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+          <ul class="space-y-8">
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Help Center</a></li>
+          </ul>
+        </div>
 
-      </section>
-
-    </main>
-    <footer></footer>
+        <!-- Right: Social Icons -->
+        <div class="flex md:justify-end space-x-4">
+          <a href="#"
+            ><img
+              src="./assets/icon-linkedin.png"
+              alt="LinkedIn"
+              class="h-9 w-9"
+          /></a>
+          <a href="#"
+            ><img src="./assets/icon-twitter.png" alt="X" class="h-9 w-9"
+          /></a>
+          <a href="#"
+            ><img
+              src="./assets/icon-facebook.png"
+              alt="Facebook"
+              class="h-9 w-9"
+          /></a>
+          <a href="#"
+            ><img src="./assets/icon-youtube.png" alt="YouTube" class="h-9 w-9"
+          /></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

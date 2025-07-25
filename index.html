@@ -50,22 +50,24 @@
     <title>Flower Market</title>
   </head>
 
-  <body class=" bg-[#D9D9D9]">
-    <header class="max-w-[91.6667%] mx-auto" >
+  <body class="bg-[#D9D9D9]">
+    <header class="max-w-[91.6667%] mx-auto">
       <nav class="flex justify-between mt-8">
         <div class="flex"><img src="./assets/logo.png" alt="" /></div>
 
         <div class="flex items-center">
-          <ul class="flex gap-12">
+          <ul class="hidden md:flex gap-12">
             <li>Home</li>
             <li>Shop</li>
             <li>About Us</li>
-            <li>Cart ($56)</li>
+          </ul>
+          <ul class="ml-8">
+             <li>Cart ($56)</li>
           </ul>
         </div>
       </nav>
 
-      <div class="flex items-center mt-28">
+      <div class="flex flex-col-reverse md:flex-row items-center  mt-28">
         <div class="w-1/2">
           <h3 class="font-noto-serif text-6xl font-bold mb-3">
             <span class="text-black">ALWAYS</span>
@@ -81,7 +83,9 @@
           </p>
         </div>
 
-        <img src="./assets/hero-flower.png" alt="" />
+        <div class="ml-12">
+          <img src="./assets/hero-flower.png" alt="" />
+        </div>
       </div>
     </header>
 
@@ -99,7 +103,7 @@
         </p>
 
         <!-- plant section card cotainer -->
-        <div class="mt-12 grid lg:grid-cols-4 gap-x-5 gap-y-9 sm:grid-cols-2">
+        <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-10">
           <!-- card -->
           <div class="w-[270px]">
             <img src="./assets/sample-flower-image.png" alt="" />
@@ -223,36 +227,45 @@
           </div>
         </div>
       </section>
-      <!-- flowe and plant lover section -->
-      <section class="max-w-[91.6667%] mx-auto flex mt-52">
-        <img src="/assets/flower-store.png" alt="" />
 
-        <!-- flowe and plant lover text -->
-        <div class="ml-16">
-          <h3 class="font-noto-serif font-bold text-5xl text-black mb-5">
-            Flower & Plants <br />
-            Lover
-          </h3>
+      <!-- flower and plant lover section -->
+      <section class="max-w-[91.6667%] mx-auto mt-52">
+        <div class="grid grid-cols-1 md:grid-cols-2">
+          <div class="relative">
+            <img src="./assets/flower-store.png" alt="" />
+           <div class="absolute inset-0 -top-28 left-96">
+             <img src="./assets/trusted-badge.png" alt="" class="w-60 h-60">
+           </div>
 
-          <ul
-            class="list-disc font-inter font-normal text-2xl text-color-light-gray pl-7"
-          >
-            <li>
-              Indulge your senses with the beauty and fragrance of our fresh
-              flower shop. From classic roses to exotic blooms, we offer a wide
-              variety of fresh.
-            </li>
-            <li class="my-5">
-              Indulge your senses with the beauty and fragrance of our fresh
-              flower shop. From classic roses to exotic blooms, we offer a wide
-              variety of fresh.
-            </li>
-            <li>
-              Indulge your senses with the beauty and fragrance of our fresh
-              flower shop. From classic roses to exotic blooms, we offer a wide
-              variety of fresh.
-            </li>
-          </ul>
+          </div>
+
+          <!-- flowe and plant lover text -->
+          <div class="ml-16 mt-">
+            <h3 class="font-noto-serif font-bold text-5xl text-black mb-5">
+              Flower & Plants <br />
+              Lover
+            </h3>
+
+            <ul
+              class="list-disc font-inter font-normal text-2xl text-color-light-gray pl-7"
+            >
+              <li>
+                Indulge your senses with the beauty and fragrance of our fresh
+                flower shop. From classic roses to exotic blooms, we offer a
+                wide variety of fresh.
+              </li>
+              <li class="my-5">
+                Indulge your senses with the beauty and fragrance of our fresh
+                flower shop. From classic roses to exotic blooms, we offer a
+                wide variety of fresh.
+              </li>
+              <li>
+                Indulge your senses with the beauty and fragrance of our fresh
+                flower shop. From classic roses to exotic blooms, we offer a
+                wide variety of fresh.
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -328,37 +341,41 @@
       </section>
 
       <!-- News latter section -->
-      <section class="mt-28">
+      <section class="mt-28 relative">
+        <div class="w-full">
+          <img src="./assets/news-letter-bg.png" alt="" class="w-full h-auto" />
 
-        <div class="w-full relative">
-          <img src="./assets/news-letter-bg.png" alt="">
+          <div
+            class="absolute inset-0 flex flex-col justify-center items-center text-center px-4"
+          >
+            <h2
+              class="font-noto-serif font-bold text-3xl md:text-5xl text-white mb-5"
+            >
+              Join the colorful Bunch
+            </h2>
 
-          <div class="absolute inset-0 flex flex-col justify-center items-center">
-            <h2 class="font-noto-serif font-bold text-5xl text-white mb-5">Join the colorful Bunch</h2>
-            <div>
-              <input type="email" placeholder="Write email" class="py-4 pl-5 pr-96 text-black font-inter font-normal text-base bg-white ">
-              <button class="-ml-1 bg-primary-color py-4 px-12 text-white text-base font-semibold font-inter">Subscrive</button>
+            <div class="flex">
+              <input
+                type="email"
+                placeholder="Write email"
+                class="md:py-4 pl-5 md:pr-96 text-black font-inter font-normal text-base bg-white"
+              />
+              <button
+                class="-ml-1 bg-primary-color py-4 px-12 text-white text-base font-semibold font-inter"
+              >
+                Subscrive
+              </button>
             </div>
-
           </div>
-
         </div>
-
-        
-
-
       </section>
-
-
-
     </main>
 
     <footer class="max-w-[91.6667%] mx-auto my-12">
-
       <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
         <!-- Left: Logo and Description -->
         <div>
-          <img src="./assets/logo.png" alt="">
+          <img src="./assets/logo.png" alt="" />
           <p class="font-inter font-normal text-xl text-gray-700">
             Indulge your senses with the beauty and fragrance of our fresh
             flower shop.
@@ -366,7 +383,9 @@
         </div>
 
         <!-- Middle: Navigation Links -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-700">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-700"
+        >
           <ul class="space-y-8">
             <li><a href="#">Home</a></li>
             <li><a href="#">About Us</a></li>
